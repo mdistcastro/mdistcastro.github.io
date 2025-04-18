@@ -1,1 +1,38 @@
-sample
+body, html {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex: 1; /* This ensures the main content takes up the remaining space */
+    height: 80%;
+}
+
+footer {
+
+    background-color: #343a40; /* Matches the dark theme */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Change to fixed for always visible */
+    bottom: 0;
+    width: 100%;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
