@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to my personal portfolio website! Explore my projects, hobbies, and creative work, showcasing my skills and interests.">
+  <meta name="keywords" content="portfolio, personal website, creative work, hobbies, interests, projects, MDIS in Tashkent">
+  <meta name="author" content="Eugene Castro">
+  <title>ICE1411 - Assignment 1 - My Personal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item me-3">
+              <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link " href="about.html">About Me</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="collections.html">Collections</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container d-flex justify-content-center align-items-center" ">   
+    <h1>Image Gallery</h1>
+    <div class="container text-center mt-4">      
+      <div id="gallery" class="row row-cols-3 row-cols-sm-3 row-cols-md-3 g-4"></div>
+    </div>
+  
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageCaption"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImage" class="img-fluid" src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class=" bg-dark text-white text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="text-uppercase">About</h5>
+          <p>
+            This is my personal website where I showcase my work, hobbies, and interests. Stay connected!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About Me</a></li>
+            <li><a href="portfolio.html" class="text-white text-decoration-none">Portfolio</a></li>
+            <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+            <li><a href="collections.html" class="text-white text-decoration-none">Collections</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Contact</h5>
+          <p>Email: myemail@example.com</p>
+          <p>Phone: +123456789</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2025 My Personal Website | All Rights Reserved.
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>      
+</body>
+
+</html>
